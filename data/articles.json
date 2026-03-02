@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "My first article",
+        "content": "Lorem ipsum dolor sit amet...",
+        "date": "2024-08-07"
+    },
+    {
+        "id": 2,
+        "title": "Second article",
+        "content": "Consectetur adipiscing elit...",
+        "date": "2024-08-04"
+    }
+]
