@@ -20,39 +20,27 @@ body {
     overflow: hidden;
 }
 
-.container.active {
-    grid-template-columns: 0.6fr 0.4fr;
-}
+.container.active { grid-template-columns: 0.6fr 0.4fr; }
 
-.content-list {
-    padding: 60px;
-}
+.content-list { padding: 60px; }
 
-.profile {
-    margin-top: 80px;
-}
+.profile { margin-top: 80px; }
 
 h1, h2 {
     font-size: 20px;
     margin: 0;
 }
 
-h2 {
-    color: #B0B0B0;
-}
+h2 { color: #B0B0B0; }
 
 .profile-description {
     max-width: 50%;
     margin-top: 40px;
 }
 
-.year-group {
-    margin-top: 40px;
-}
+.year-group { margin-top: 40px; }
 
-.year {
-    margin-bottom: 40px;
-}
+.year { margin-bottom: 40px; }
 
 .post-item {
     display: flex;
@@ -64,15 +52,15 @@ h2 {
 
 .post-item:hover { opacity: 0.6; }
 
-.post-date {
-    color: #C0C0C0;
-}
+.post-date { color: #C0C0C0; }
 
-.post-title {
-    text-decoration: none;
-    color: #EEE;
-    margin-left: 20px;
-}
+.post-title { margin-left: 20px; }
+
+.post-action, .post-delete { transition: opacity 0.2s; }
+
+.post-action:hover { opacity: 0.6; }
+
+.post-delete:hover { color: rgba(255, 0, 0, 0.7);}
 
 .details-panel {
     padding: 60px;
@@ -101,6 +89,60 @@ h2 {
 
 .close-btn:hover { opacity: 0.6; }
 
-.article-body {
-    margin-top: 40px;
+.article-body { margin-top: 40px; }
+
+.logo { margin-bottom: 40px; }
+
+a {
+    text-decoration: none;
+    color: #EEE;
+}
+
+.add {
+    margin-left: 30%;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.add:hover { opacity: 0.6; }
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-form input, .admin-form textarea {
+    background: #222;
+    border: 1px solid #333;
+    color: #EEE;
+    padding: 10px;
+    font-family: "Courier New", monospace;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-publish {
+    background: #EEE;
+    color: #111;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-publish:hover { opacity: 0.8; }
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #888;
+}
+
+#cancel {
+    text-align: end;
 }
