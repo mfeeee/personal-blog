@@ -28,7 +28,7 @@ include __DIR__ . '/includes/header.php';
 <aside class="details-panel" id="details-panel">
     <div onclick="closeContent()" class="close-btn">[ close ]</div>
     <div id="dynamic-content">
-        <p>Selecione um post para ver os detalhes aqui.</p>
+        <p>Select a post to see the details.</p>
     </div>
 </aside>
 </div>
