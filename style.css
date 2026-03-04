@@ -24,9 +24,14 @@ body {
 
 .content-list { padding: 60px; }
 
-.profile { margin-top: 80px; }
+.profile, .article-header { margin-top: 80px; }
 
-h1, h2 {
+.article-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2, .title {
     font-size: 20px;
     margin: 0;
 }
@@ -42,15 +47,21 @@ h2 { color: #B0B0B0; }
 
 .year { margin-bottom: 40px; }
 
-.post-item {
+.post-item, .logout {
     display: flex;
     gap: 30px;
     cursor: pointer;
     transition: opacity 0.2s;
     margin-bottom: 30px;
+    align-content: space-between;
 }
 
-.post-item:hover { opacity: 0.6; }
+.list-item:hover {
+    opacity: 1 !important;
+    cursor: default !important;
+}
+
+.post-item:hover, .logout:hover { opacity: 0.6; }
 
 .post-date { color: #C0C0C0; }
 
@@ -98,8 +109,11 @@ a {
     color: #EEE;
 }
 
+.new-article {
+    margin-top: 20px;
+}
+
 .add {
-    margin-left: 30%;
     cursor: pointer;
     transition: opacity 0.2s;
 }
@@ -145,4 +159,12 @@ a {
 
 #cancel {
     text-align: end;
+}
+
+i {
+    font-size: 30px;
+}
+
+footer {
+    margin-top: 400px;
 }
