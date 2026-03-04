@@ -16,7 +16,11 @@ include __DIR__ . '/head.php';
                     <h2>Software Engineer</h2>
                 </div>
                 <div class="profile-description">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, eos obcaecati labore rem expedita ipsum nisi vitae vero odio ducimus veritatis facilis voluptates dolores delectus, nobis cumque velit beatae?</p>
+                    <p>Hey! I'm a Software Engineer who loves sharing my own unique take on the tech world. 
+                        I’ve got a B.S. in Systems Analysis and Development, and these days, I’m diving deep
+                        into PHP and Linux to sharpen my skills. When I’m not coding, I’m usually obsessing
+                        over music—so if you ever want to chat about tunes, fair warning: I’ll definitely 
+                        have a lot to say!</p>
                 </div>
             </header>
 
