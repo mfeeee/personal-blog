@@ -83,3 +83,28 @@ function openEditForm(id, title, date, content) {
     container.classList.add('active');
     panel.style.opacity = 1;
 }
+
+function openLogin() {
+    const container = document.getElementById('main-container');
+    const panel = document.getElementById('dynamic-content');
+    
+    panel.innerHTML = `
+        <form action="/admin/login.php" method="POST" class="admin-form">
+            <h2>Login</h2>
+            
+            <div>
+                <label>Username</label>
+                <input type="text" name="username" required>
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <button type="submit" class="btn-publish">Log in</button>
+            <a href="/index.php" class="btn-cancel">Back to Blog</a>
+        </form>
+    `;
+    
+    container.classList.add('active');
+    panel.style.opacity = 1;
+}
