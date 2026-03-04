@@ -22,7 +22,13 @@ body {
 
 .container.active { grid-template-columns: 0.6fr 0.4fr; }
 
-.content-list { padding: 60px; }
+.content-list { 
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
 
 .profile, .article-header { margin-top: 80px; }
 
@@ -166,5 +172,6 @@ i {
 }
 
 footer {
-    margin-top: 400px;
+    margin-top: auto;
+    padding-top: 40px;
 }
