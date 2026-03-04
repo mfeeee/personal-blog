@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Blog | Maria Fernanda</title>
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet"/>
-    <link href="/style.css" rel="stylesheet">
-    <script src="/script.js"></script>
-</head>
+<?php 
+
+include __DIR__ . '/head.php';
+
+?>
+
 <body>
     <div class="container" id="main-container">
         <main class="content-list">
             <header>
                 <div>
-                    <i class="bx bx-quote-right"></i>
+                    <i class="bx bx-quote-right" onclick="openLogin()"></i>
                 </div>
                 <div class="profile">
                     <h1>Maria Fernanda</h1>
