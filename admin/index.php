@@ -1,30 +1,28 @@
 <?php
 
+require_once __DIR__ . '/auth.php';
 require_once __DIR__. '/../includes/functions.php';
 
 $articles = getAllArticles();
 
+include __DIR__ . '/../includes/head.php';
+
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Blog | Maria Fernanda</title>
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet"/>
-    <link href="/style.css" rel="stylesheet"/>
-    <script src="/script.js"></script>
-</head>
 <body>
     <div class="container" id="main-container">
         <main class="content-list">
             <header>
                 <div class="logo">
-                    <i class="bx bx-face-child"></i>
+                    <i class="bx bx-quote-right"></i>
                 </div>
-                <span class="title">All Articles</span>
-                <a href="javascript:void(0)" onclick="openAddForm()" class="add">+ Add New Article</a>
+                <div class="article-header">
+                    <span class="title">All Articles</span>
+                    <a href="logout.php" class="logout">[ Logout ]</a>
+                </div>
+                <div class="new-article">
+                    <a href="javascript:void(0)" onclick="openAddForm()" class="add">+ Add New Article</a>
+                </div>
             </header>
 
             <section class="year-group">
@@ -33,7 +31,7 @@ $articles = getAllArticles();
                         $jsTitle = json_encode($article['title']);
                         $jsContent = json_encode($article['content']);
                     ?>
-                    <div class="post-item" onclick='changeContent(<?= $jsTitle ?>, <?= $jsContent ?>)'>
+                    <div class="post-item list-item ">
                         <span class="post-date"><?= $article['date'] ?></span>
                         <span class="post-title"><?= $article['title'] ?></span>
                         <a href="javascript:void(0)"  
@@ -45,6 +43,10 @@ $articles = getAllArticles();
                     </div>
                 <?php endforeach ?>
             </section>
+
+            
+
+            <?php include __DIR__ . '/../includes/footer.php' ?>
     
         </main>
 
@@ -54,6 +56,8 @@ $articles = getAllArticles();
                 <p>Add a new post here.</p>
             </div>
         </aside>
+        
+        
 
     </div>
 
